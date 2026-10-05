@@ -42,7 +42,7 @@ var jobs=[['Bihar Police Constable (Operator) 2026','CSBC Bihar','bihar','993 Va
 var results=[];
 var admits=[];
 var syllabus=[];
-function detailUrl(title){var m={'Bihar Police Constable (Operator) 2026':'bihar-police-constable-operator-2026.html','BPSC 72nd CCE 2026':'bpsc-72nd-cce-2026.html','Bihar Police Special Branch Constable 2026':'bihar-police-special-branch-constable-2026.html','Bihar Police Prohibition Constable / Jail Warder / Mobile Squad':'bihar-police-prohibition-jail-warder-2026.html'};return m[title]||('#'+encodeURIComponent(title))}
+function detailUrl(title){var m={'Bihar Police Constable (Operator) 2026':'bihar-police-constable-operator-2026.html','BPSC 72nd CCE 2026':'bpsc-72nd-cce-2026.html','Bihar Police Special Branch Constable 2026':'bihar-police-special-branch-constable-2026.html','Bihar Police Prohibition Constable / Jail Warder / Mobile Squad':'bihar-police-prohibition-jail-warder-2026.html','Bihar Police Constable 2025':'bihar-police-constable-2025.html'};return m[title]||('#'+encodeURIComponent(title))}
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function custom(){try{return JSON.parse(localStorage.getItem(key)||'[]')}catch(e){return[]}}
 function allJobs(){return custom().filter(function(x){return x.type==='job'}).map(function(x){return [x.title,x.org||'Sarkari Update Pro','job',x.extra||'Latest Update',x.date||'Updated']}).concat(jobs)}
