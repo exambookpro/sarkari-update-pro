@@ -35,20 +35,37 @@
 <div class="top">📢 Sarkari Update Pro — Latest Government Jobs, Results, Admit Card & Exams</div>
 <nav class="nav"><div class="navin"><a class="brand" href="#">SARKARI UPDATE PRO</a><div class="links"><a href="#jobs">Latest Jobs</a><a href="#results">Results</a><a href="#admit">Admit Card</a><a href="#answer">Answer Key</a><a href="#admission">Admission</a><a href="#syllabus">Syllabus</a><a href="bihar-jobs.html">Bihar Jobs</a></div></div></nav>
 <section class="hero"><div class="wrap"><h1>Latest Sarkari Result & Government Jobs</h1><p>सरकारी नौकरी, रिजल्ट, एडमिट कार्ड, आंसर की, सिलेबस और एडमिशन की जानकारी एक जगह।</p><div class="heroSearch"><input id="hq" placeholder="Search Exam, Post, Department..."><button onclick="heroSearch()">Search</button></div></div></section>
+<div class="wrap"><div class="quickGrid">
+<a href="bpsc-tre-4-school-teacher-2026.html">BPSC School Teacher TRE 4.0 (32,388 Posts)</a>
+<a href="jobs.html">Daily 5 Minutes Meditation & Crack Exams</a>
+<a href="jobs.html">UP/State Teacher Recruitment Updates</a>
+<a href="jobs.html">Rajasthan Safai Karmchari Updates</a>
+<a href="jobs.html">UP Assistant Teacher Updates</a>
+<a href="jobs.html">SSC CHSL Online Form Updates</a>
+<a href="jobs.html">RRB NTPC UG Level Form Updates</a>
+<a href="jobs.html">RRB NTPC Graduate Level Updates</a>
+</div>
+<div class="discover panel"><div class="discoverHead">Discover more</div><a href="jobs.html">Army Exam Prep <span>›</span></a><a href="jobs.html">Air Force Recruitment <span>›</span></a><a href="jobs.html">Latest Job Listings <span>›</span></a></div></div>
 <main class="wrap">
 <div class="stats"><div class="stat"><b>12+</b><span class="muted">Latest Jobs</span></div><div class="stat"><b>4+</b><span class="muted">Police Updates</span></div><div class="stat"><b>1+</b><span class="muted">BPSC Updates</span></div><div class="stat"><b>100%</b><span class="muted">Official Focus</span></div></div>
 <div class="notice">⚡ Important: आवेदन करने से पहले official notification और संबंधित विभाग की website पर details जरूर verify करें।</div>
 
 <div class="portalGrid">
-<section class="panel" id="results"><div class="head"><h2>📊 Results</h2></div><div class="cards" id="resultCards"></div></section>
-<section class="panel" id="admit"><div class="head"><h2>🎫 Admit Card</h2></div><div class="cards" id="admitCards"></div></section>
-<section class="panel" id="jobs"><div class="head"><h2>🔥 Latest Govt Jobs</h2></div><div class="tabs"><button class="on" onclick="tab(this,'all')">All</button><button onclick="tab(this,'central')">Central</button><button onclick="tab(this,'bihar')">Bihar</button></div><div class="cards" id="jobCards"></div></section>
+<section class="panel dense" id="results"><div class="head"><h2>Results</h2></div><div class="cards" id="resultCards"></div><div class="listMore"><a href="results.html">View More</a></div></section>
+<section class="panel dense" id="admit"><div class="head"><h2>Admit Cards</h2></div><div class="cards" id="admitCards"></div><div class="listMore"><a href="admit-card.html">View More</a></div></section>
+<section class="panel dense" id="jobs"><div class="head"><h2>Latest Jobs</h2></div><div class="tabs"><button class="on" onclick="tab(this,'all')">All</button><button onclick="tab(this,'central')">Central</button><button onclick="tab(this,'bihar')">Bihar</button></div><div class="cards" id="jobCards"></div><div class="listMore"><a href="jobs.html">View More</a></div></section>
 </div>
 
 <div class="portalGrid">
-<section class="panel" id="answer"><div class="head"><h2>📝 Answer Key</h2></div><div class="cards" id="answerCards"></div></section>
-<section class="panel" id="documents"><div class="head"><h2>📄 Documents</h2></div><div class="cards"><article class="job"><h3><a href="syllabus.html">Syllabus & Exam Pattern</a></h3><p class="muted">Latest verified syllabus and exam pattern updates.</p></article><article class="job"><h3><a href="contact.html">Important Notices</a></h3><p class="muted">Report incorrect or outdated information.</p></article></div></section>
-<section class="panel" id="admission"><div class="head"><h2>🎓 Admission</h2></div><div class="cards" id="admissionCards"></div></section>
+<section class="panel dense" id="answer"><div class="head"><h2>Answer Key</h2></div><div class="cards" id="answerCards"></div><div class="listMore"><a href="answer-key.html">View More</a></div></section>
+<section class="panel dense" id="documents"><div class="head"><h2>Documents</h2></div><div class="cards">
+<article class="job"><h3><a href="syllabus.html">Exam Syllabus & Pattern</a></h3></article>
+<article class="job"><h3><a href="admit-card.html">Exam Admit Card</a></h3></article>
+<article class="job"><h3><a href="results.html">Result & Merit List</a></h3></article>
+<article class="job"><h3><a href="jobs.html">Recruitment Notifications</a></h3></article>
+<article class="job"><h3><a href="bihar-jobs.html">Bihar Government Jobs</a></h3></article>
+</div><div class="listMore"><a href="syllabus.html">View More</a></div></section>
+<section class="panel dense" id="admission"><div class="head"><h2>Admission</h2></div><div class="cards" id="admissionCards"></div><div class="listMore"><a href="results.html">View More</a></div></section>
 </div>
 
 <div class="panelGrid">
@@ -65,8 +82,15 @@
 <script>
 var key='sarkariUpdateProData';
 var jobs=[['BPSC TRE 4 School Teacher 2026','Bihar Public Service Commission','bihar','32,388 Posts','Last date: 26 Oct 2026'],['BTSC Scientific Assistant 2026','Bihar Technical Service Commission','bihar','6 Posts','Last date: 24 Oct 2026'],['BTSC Food Safety Officer 2026','Bihar Technical Service Commission','bihar','Current recruitment','Last date: 24 Oct 2026'],['BTSC Fishery Extension Officer 2026','Bihar Technical Service Commission','bihar','231 Posts','Last date: 23 Oct 2026'],['BTSC Touring Veterinary Officer 2026','Bihar Technical Service Commission','bihar','787 Posts','Last date: 23 Oct 2026'],['Bihar Forest Department Contractual Recruitment 2026','Environment, Forest & Climate Change Department, Bihar','bihar','6 positions / multiple posts','Last date: 14 Oct 2026, 6 PM'],['WCDC Bihar Contract Recruitment 2026','Women & Child Development Corporation, Bihar','bihar','4 contractual posts','Last date: 06 Nov 2026'],['Bihar Police Constable (Operator) 2026','CSBC Bihar','bihar','993 Vacancies','Result: 18 Aug 2026'],['Bihar Police Special Branch Constable 2026','CSBC Bihar','bihar','83 Vacancies','DV Notice: 22 Sep 2026'],['Bihar Police Prohibition Constable / Jail Warder / Mobile Squad','CSBC Bihar','bihar','4,128 Vacancies','Result: 18 Aug 2026'],['Bihar Police Constable 2025','CSBC Bihar','bihar','19,838 Vacancies','Final selection: 27 May 2026'],['BPSC 72nd CCE 2026','Bihar Public Service Commission','bihar','1,189 Vacancies','Latest schedule subject to postponement notice']];
-var results=[];
-var admits=[];
+var results=[
+['Bihar Police Constable (Operator) 2026 Written Result','CSBC Bihar','result','993 vacancies','18 Aug 2026'],
+['Bihar Police Constable 2025 Final Selection List','CSBC Bihar','result','19,838 vacancies','27 May 2026'],
+['Bihar Police Prohibition/Jail Warder/Mobile Squad Result','CSBC Bihar','result','4,128 vacancies','18 Aug 2026']
+];
+var admits=[
+['Bihar Police Constable (Operator) 2026 e-Admit Card','CSBC Bihar','admit','993 vacancies','13 Jun 2026'],
+['Bihar Police Special Branch Constable 2026 e-Admit Card','CSBC Bihar','admit','83 vacancies','2026']
+];
 var syllabus=[];
 function detailUrl(title){var m={'BPSC TRE 4 School Teacher 2026':'bpsc-tre-4-school-teacher-2026.html','BTSC Scientific Assistant 2026':'btsc-scientific-assistant-2026.html','BTSC Food Safety Officer 2026':'btsc-food-safety-officer-2026.html','BTSC Fishery Extension Officer 2026':'btsc-fishery-extension-officer-2026.html','BTSC Touring Veterinary Officer 2026':'btsc-touring-veterinary-officer-2026.html','Bihar Forest Department Contractual Recruitment 2026':'bihar-forest-contract-recruitment-2026.html','WCDC Bihar Contract Recruitment 2026':'wcdc-bihar-contract-recruitment-2026.html','Bihar Police Constable (Operator) 2026':'bihar-police-constable-operator-2026.html','BPSC 72nd CCE 2026':'bpsc-72nd-cce-2026.html','Bihar Police Special Branch Constable 2026':'bihar-police-special-branch-constable-2026.html','Bihar Police Prohibition Constable / Jail Warder / Mobile Squad':'bihar-police-prohibition-jail-warder-2026.html','Bihar Police Constable 2025':'bihar-police-constable-2025.html'};return m[title]||('#'+encodeURIComponent(title))}
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
@@ -86,7 +110,7 @@ var verified={
 };
 function detailHtml(title,x){var rows=[['Organization',x.org],['Post / Exam',x.post],['Total Vacancy',x.vacancy],['Eligibility',x.eligibility],['Age Limit',x.age],['Important Dates',x.dates],['Application Fee',x.fee],['Selection Process',x.selection]];return '<h2>'+esc(title)+'</h2><p><span class="tag">'+esc(x.type)+'</span></p><p style="line-height:1.7">'+esc(x.details)+'</p><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">'+rows.map(function(r){return '<div style="border:1px solid #e5e7eb;border-radius:10px;padding:12px"><div class="muted">'+esc(r[0])+'</div><b style="line-height:1.5">'+esc(r[1])+'</b></div>'}).join('')+'</div><div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:8px">'+(x.apply?'<a class="btn" target="_blank" rel="noopener noreferrer" href="'+esc(x.apply)+'">Apply Online ↗</a>':'')+(x.notification?'<a class="btn" style="background:#eaf1ff;color:#0b3d91" target="_blank" rel="noopener noreferrer" href="'+esc(x.notification)+'">Notification ↗</a>':'')+(x.url?'<a class="btn" style="background:#eaf1ff;color:#0b3d91" target="_blank" rel="noopener noreferrer" href="'+esc(x.url)+'">'+esc(x.label||'Official Website')+' ↗</a>':'')+'</div><p class="muted">⚠️ आवेदन/परीक्षा से पहले official notification में eligibility, dates और fee दोबारा verify करें।</p>'}
 function detailOpen(title){var x=custom().find(function(a){return a.title===title})||verified[title]||{type:'Update',org:'Official Department',post:title,vacancy:'—',eligibility:'Official notification देखें।',age:'Official notification देखें।',dates:'Latest official notice देखें।',fee:'Official notification देखें।',selection:'Official notification देखें।',details:'इस update की पूरी जानकारी official source से verify करें।',url:''};document.getElementById('detail').innerHTML=detailHtml(title,x)+(x.url?'':'<p class="muted">Official link अभी उपलब्ध नहीं है।</p>');document.getElementById('modal').classList.add('show')}
-function simple(id,list,type){var c=custom().filter(function(x){return x.type===type}),arr=c.map(function(x){return [x.title,x.org||'Latest Update',x]});Object.keys(verified).forEach(function(k){if(verified[k].type.toLowerCase()===type)arr.push([k,verified[k].org,verified[k]])});document.getElementById(id).innerHTML=arr.map(function(x){return '<article class="job"><span class="tag">'+type.toUpperCase()+'</span><h3><a href="javascript:detailOpen('+JSON.stringify(x[0])+')">'+esc(x[0])+'</a></h3><div class="muted">📌 '+esc(x[1])+'</div></article>'}).join('')||'<div class="job">कोई verified update नहीं मिला।</div>'}
+function simple(id,list,type){var c=custom().filter(function(x){return x.type===type}),arr=c.map(function(x){return [x.title,x.org||'Latest Update',x]});list.forEach(function(x){arr.push([x[0],x[1],x])});Object.keys(verified).forEach(function(k){if(verified[k].type.toLowerCase()===type && !arr.some(function(a){return a[0]===k}))arr.push([k,verified[k].org,verified[k]])});document.getElementById(id).innerHTML=arr.map(function(x){return '<article class="job"><span class="tag">'+type.toUpperCase()+'</span><h3><a href="javascript:detailOpen('+JSON.stringify(x[0])+')">'+esc(x[0])+'</a></h3><div class="muted">📌 '+esc(x[1])+'</div></article>'}).join('')||'<div class="job">कोई verified update नहीं मिला।</div>'}
 function renderAnswer(){var c=document.getElementById('answerCards');var arr=Object.keys(verified).filter(function(k){return verified[k].type==='Answer Key'});c.innerHTML=arr.map(function(k){return '<article class="job"><span class="tag">ANSWER KEY</span><h3><a href="javascript:detailOpen('+JSON.stringify(k)+')">'+esc(k)+'</a></h3></article>'}).join('')||'<article class="job"><h3><a href="answer-key.html">Latest Answer Key Updates</a></h3><div class="muted">Verified answer-key updates will appear here.</div></article>'}
 function tab(btn,type){document.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('on')});btn.classList.add('on');render(type==='all'?allJobs():allJobs().filter(function(x){return x[2]===type}))}
 function search(){var q=document.getElementById('q').value.toLowerCase().trim();render(allJobs().filter(function(x){return x.join(' ').toLowerCase().indexOf(q)>=0}));document.getElementById('jobs').scrollIntoView({behavior:'smooth'})}
