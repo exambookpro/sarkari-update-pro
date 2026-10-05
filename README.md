@@ -1,0 +1,1 @@
+# Sarkari Update Pro\n\nResponsive static government-job update portal with search, categories, results, admit cards, syllabus and browser-local Admin Panel.\n
