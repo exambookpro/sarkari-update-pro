@@ -96,3 +96,30 @@ var extraJobs=[
 ["Indian Army TGC 145 Online Form 2026 – Start","Indian Army","central","Latest recruitment","Official notice"],
 ["UP PGT Teacher Online Form 2026 (2607 Posts)","UPESSC","central","2,607 Posts","Last date: 17 Oct 2026"]
 ];
+
+var syllabusUpdates=[
+["BPSC TRE 4 School Teacher 2026 Syllabus / Exam Pattern","BPSC","https://bpsc.bihar.gov.in/"],
+["SSC CGL 2026 Syllabus & Exam Pattern","SSC","https://ssc.gov.in/"],
+["SSC CHSL 2026 Syllabus & Exam Pattern","SSC","https://ssc.gov.in/"],
+["RRB NTPC 2026 Syllabus & Exam Pattern","Railway Recruitment Boards","https://www.rrbcdg.gov.in/"],
+["UPSC CAPF 2026 Syllabus & Exam Pattern","UPSC","https://www.upsc.gov.in/"],
+["UPSC CMS 2026 Syllabus & Exam Pattern","UPSC","https://www.upsc.gov.in/"],
+["NTA CUET UG 2026 Syllabus","NTA","https://cuet.nta.nic.in/"],
+["NTA NEET UG 2026 Syllabus","NTA","https://neet.nta.nic.in/"],
+["Bihar Police Constable Syllabus & Exam Pattern","CSBC Bihar","https://csbc.bihar.gov.in/"],
+["BPSC 72nd CCE Syllabus & Exam Pattern","BPSC","https://bpsc.bihar.gov.in/"]
+];
+var officialSources={
+"SSC CHSL 10+2 Online Form 2026 (2536 Posts)":"https://ssc.gov.in/",
+"RRB NTPC 10+2 UG Online Form 2026":"https://www.rrbcdg.gov.in/",
+"Assam Rifles Technical / Tradesman Online Form 2026":"https://assamrifles.gov.in/",
+"RRB NTPC Graduate Level Online Form 2026 (3477 Posts)":"https://www.rrbcdg.gov.in/",
+"UPESSC PRT Assistant Teacher Online Form 2026 (12405 Post)":"https://upessc.up.gov.in/",
+"BPSSC Bihar Police Company Commander Online Form 2026":"https://bpssc.bihar.gov.in/",
+"Canara Bank Apprentice Online Form 2026 (3500 Posts)":"https://www.canarabank.com/",
+"Rajasthan Safai Karmchari Online Form 2026 (24,752 posts)":"https://urban.rajasthan.gov.in/",
+"Railway RRC NWR Apprentice Online Form 2026":"https://rrcjaipur.in/",
+"Supreme Court of India Junior Court Assistant Online Form 2026":"https://main.sci.gov.in/",
+"Indian Army TGC 145 Online Form 2026 – Start":"https://joinindianarmy.nic.in/",
+"UP PGT Teacher Online Form 2026 (2607 Posts)":"https://upessc.up.gov.in/"
+};
