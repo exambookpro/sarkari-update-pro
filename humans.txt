@@ -1,0 +1,4 @@
+Sarkari Update Pro
+A government-job and exam-information portal.
+Official-source-first publishing policy.
+https://sarkari-update-pro.vercel.app/
