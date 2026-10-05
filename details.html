@@ -58,4 +58,43 @@ document.getElementById("short").innerHTML='<div class="row"><span class="label"
 document.getElementById("details").innerHTML='<div class="row"><span class="label">Important Dates</span><span class="value">'+esc(dates)+'</span></div><div class="row"><span class="label">Eligibility</span><span class="value">'+esc(eligibility)+'</span></div><div class="row"><span class="label">Application Fee</span><span class="value">'+esc(fee)+'</span></div><div class="row"><span class="label">Selection Process</span><span class="value">'+esc(selection)+'</span></div>';
 var actions='';if(rr.apply||x&&x.apply)actions+='<a class="btn" href="'+esc(rr.apply||(x&&x.apply))+'">Apply Online ↗</a>';if(rr.notice)actions+='<a class="btn alt" href="'+esc(rr.notice)+'">Official Notification ↗</a>';if(source)actions+='<a class="btn alt" href="'+esc(source)+'">Official Website ↗</a>';document.getElementById("actions").innerHTML=actions||'<span>Official link इस update के लिए उपलब्ध नहीं है.</span>';
 document.getElementById("actions").insertAdjacentHTML("afterend",'<section class="card" style="margin-top:7px"><h2>How To Apply / What To Do</h2><div class="body"><ol><li>पहले official notification/notice पढ़ें और eligibility, age, fee तथा dates verify करें.</li><li>Apply Online उपलब्ध हो तो ऊपर दिए official application link से form भरें.</li><li>Application में नाम, जन्मतिथि, category, qualification और contact details original documents के अनुसार भरें.</li><li>Fee/payment के बाद receipt और submitted application की copy सुरक्षित रखें.</li><li>Admit card, result, correction, DV या further notice के लिए official department की latest notice check करते रहें.</li></ol></div></section><section class="card" style="margin-top:7px"><h2>Important Links</h2><div class="body">'+(rr.apply||x&&x.apply?'<p><a href="'+esc(rr.apply||(x&&x.apply))+'">Apply Online</a></p>':'')+(rr.notice?'<p><a href="'+esc(rr.notice)+'">Download / Check Official Notification</a></p>':'')+(source?'<p><a href="'+esc(source)+'">Official Website</a></p>':'')+'<p><a href="index.html">Back to Sarkari Update Pro</a></p></div></section><section class="card" style="margin-top:7px"><h2>Disclaimer</h2><div class="body">यह page information को आसान भाषा में व्यवस्थित करता है. Final authority संबंधित official notification/department है. कोई date, fee, vacancy या eligibility बदलने पर official notice को प्राथमिकता दें.</div></section>');
+</script><script>
+(function(){
+  function safe(v){return esc(v==null||v===""?"Information not available in current dataset. Please verify the official notice.":v)}
+  var raw2=raw||[], meta=rr||{}, base=extra||{};
+  var currentStatus=status;
+  var rawInfo = raw2[3] || "";
+  var sourceUrl=source || (raw2[2]&&raw2[2].url) || "";
+  var category=(type||"update").toLowerCase();
+  var feeText=(x&&x.fee)||meta.fee||"The current verified source data does not specify the fee.";
+  var intro = (x&&x.details) || base.status || (category==="results"?"Result/selection information for this update.":category==="admit"?"Admit-card/exam information for registered candidates.":category==="answer-key"?"Answer-key information for candidates who appeared in the examination.":category==="admission"?"Admission/application information for eligible candidates.":category==="syllabus"?"Syllabus and exam-pattern information for this examination.":"Recruitment information and current application/status details.");
+  document.getElementById("short").innerHTML=
+    '<div class="row"><span class="label">Organization</span><span class="value">'+safe(org)+'</span></div>'+
+    '<div class="row"><span class="label">Post / Exam / Update</span><span class="value">'+safe((x&&x.post)||title)+'</span></div>'+
+    '<div class="row"><span class="label">Advertisement / Notice</span><span class="value">'+safe(meta.advt||"As mentioned in the official notice")+'</span></div>'+
+    '<div class="row"><span class="label">Total Vacancy / Exam</span><span class="value">'+safe(vacancy)+'</span></div>'+
+    '<div class="row"><span class="label">Current Status</span><span class="value">'+safe(currentStatus)+'</span></div>'+
+    '<div class="row"><span class="label">Information Summary</span><span class="value">'+safe(intro)+'</span></div>';
+  document.getElementById("details").innerHTML=
+    '<div class="row"><span class="label">Important Dates</span><span class="value">'+safe(dates)+'</span></div>'+
+    '<div class="row"><span class="label">Eligibility / Qualification</span><span class="value">'+safe(eligibility)+'</span></div>'+
+    '<div class="row"><span class="label">Age Limit</span><span class="value">'+safe(meta.age||(x&&x.age)||base.age)+'</span></div>'+
+    '<div class="row"><span class="label">Application Fee</span><span class="value">'+safe(feeText)+'</span></div>'+
+    '<div class="row"><span class="label">Pay / Salary</span><span class="value">'+safe(meta.pay||base.pay)+'</span></div>'+
+    '<div class="row"><span class="label">Selection / Next Stage</span><span class="value">'+safe(selection)+'</span></div>';
+  var extraHtml='<section class="card" style="margin-top:7px"><h2>How To Apply / What To Do</h2><div class="body"><ol>'+
+    '<li>सबसे पहले ऊपर दिए official notification/website से current notice verify करें.</li>'+
+    '<li>अगर application open है, केवल official Apply Online link से आवेदन करें.</li>'+
+    '<li>नाम, जन्मतिथि, category, qualification और documents original records के अनुसार भरें.</li>'+
+    '<li>Fee लागू हो तो payment receipt और submitted form सुरक्षित रखें.</li>'+
+    '<li>Admit Card/Result/Answer Key/Correction/DV जैसी अगली सूचना इसी update के official source पर देखें.</li>'+
+    '</ol></div></section>'+
+    '<section class="card" style="margin-top:7px"><h2>Important Links</h2><div class="body">'+
+    (meta.apply||x&&x.apply?'<p><a href="'+esc(meta.apply||(x&&x.apply))+'" target="_blank" rel="noopener">Apply Online ↗</a></p>':'')+
+    (meta.notice?'<p><a href="'+esc(meta.notice)+'" target="_blank" rel="noopener">Official Notification ↗</a></p>':'')+
+    (sourceUrl?'<p><a href="'+esc(sourceUrl)+'" target="_blank" rel="noopener">Official Website / Source ↗</a></p>':'')+
+    '<p><a href="index.html">← Back to Sarkari Update Pro</a></p></div></section>'+
+    '<section class="card" style="margin-top:7px"><h2>Important Note</h2><div class="body">ऊपर की जानकारी उपलब्ध verified source data से व्यवस्थित की गई है। जिस field की exact value current dataset में उपलब्ध नहीं है, वहाँ अनुमान नहीं लगाया गया है। Final authority संबंधित official notification/department है.</div></section>';
+  document.getElementById("actions").insertAdjacentHTML("afterend",extraHtml);
+})();
 </script></body></html>
