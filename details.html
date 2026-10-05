@@ -97,4 +97,26 @@ document.getElementById("actions").insertAdjacentHTML("afterend",'<section class
     '<section class="card" style="margin-top:7px"><h2>Important Note</h2><div class="body">ऊपर की जानकारी उपलब्ध verified source data से व्यवस्थित की गई है। जिस field की exact value current dataset में उपलब्ध नहीं है, वहाँ अनुमान नहीं लगाया गया है। Final authority संबंधित official notification/department है.</div></section>';
   document.getElementById("actions").insertAdjacentHTML("afterend",extraHtml);
 })();
+</script><script>
+(function(){
+  function s(v){return esc(v==null||v===""?"Not available in the current verified data. Check the official notice.":v)}
+  var arr=[];
+  if(type==="jobs") arr=(jobs||[]).concat(typeof extraJobs!=="undefined"?extraJobs:[]);
+  else if(type==="results") arr=results||[];
+  else if(type==="admit") arr=admits||[];
+  else if(type==="answer-key") arr=answerKeys||[];
+  else if(type==="admission") arr=admissions||[];
+  else if(type==="syllabus") arr=syllabusUpdates||[];
+  var related=arr.filter(function(a){return a&&a[0]!==title && ((a[1]||"").toLowerCase()===(org||"").toLowerCase() || (a[0]||"").toLowerCase().indexOf((title||"").split(" ")[0].toLowerCase())>=0)}).slice(0,5);
+  var faq=[
+    ["Is this information official?","The page is prepared from the available official-source data. The department/commission notification remains the final authority."],
+    ["Where should I apply?","Use the official Apply Online link shown above when an application link is available."],
+    ["What should I verify before applying?","Verify eligibility, age limit, fee, dates, reservation/relaxation and required documents from the latest official notification."],
+    ["What happens after applying?","Keep the submitted form and payment receipt. Follow the official source for admit card, exam, result, answer key, correction and document-verification notices."]
+  ];
+  var relatedHtml=related.length?'<section class="card" style="margin-top:7px"><h2>Related Updates</h2><div class="body">'+related.map(function(a){var u="details.html?type="+encodeURIComponent(type)+"&title="+encodeURIComponent(a[0]);return '<p><a href="'+u+'">'+esc(a[0])+'</a></p>'}).join("")+'</div></section>':"";
+  var faqHtml='<section class="card" style="margin-top:7px"><h2>Frequently Asked Questions</h2><div class="body">'+faq.map(function(f){return '<div class="row"><span class="label">'+esc(f[0])+'</span><span class="value">'+esc(f[1])+'</span></div>'}).join("")+'</div></section>';
+  var sourceHtml=source?'<section class="card" style="margin-top:7px"><h2>Official Source</h2><div class="body"><p><b>Department:</b> '+s(org)+'</p><p><a href="'+esc(source)+'" target="_blank" rel="noopener">Open Official Source ↗</a></p><p>Always prefer the latest notice if the department has issued a correction or revised schedule.</p></div></section>':"";
+  document.getElementById("actions").insertAdjacentHTML("afterend",relatedHtml+faqHtml+sourceHtml);
+})();
 </script></body></html>
