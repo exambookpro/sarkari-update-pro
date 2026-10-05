@@ -1,0 +1,14 @@
+# Sarkari Update Pro
+
+> Government job, result and exam information portal focused on India and Bihar.
+
+## Primary sections
+- https://sarkari-update-pro.vercel.app/jobs.html
+- https://sarkari-update-pro.vercel.app/results.html
+- https://sarkari-update-pro.vercel.app/admit-card.html
+- https://sarkari-update-pro.vercel.app/answer-key.html
+- https://sarkari-update-pro.vercel.app/syllabus.html
+- https://sarkari-update-pro.vercel.app/bihar-jobs.html
+
+## Important
+Use the linked official department source on each update page for final verification before applications or exam decisions.
