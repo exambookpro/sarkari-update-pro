@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://sarkari-update-pro.vercel.app/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://sarkari-update-pro.vercel.app/jobs.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sarkari-update-pro.vercel.app/results.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sarkari-update-pro.vercel.app/admit-card.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sarkari-update-pro.vercel.app/answer-key.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sarkari-update-pro.vercel.app/syllabus.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sarkari-update-pro.vercel.app/bihar-jobs.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
 </urlset>
