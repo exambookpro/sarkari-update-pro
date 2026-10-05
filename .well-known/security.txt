@@ -1,0 +1,3 @@
+Contact: https://sarkari-update-pro.vercel.app/contact.html
+Policy: https://sarkari-update-pro.vercel.app/privacy-policy.html
+Expires: 2027-10-05T00:00:00Z
